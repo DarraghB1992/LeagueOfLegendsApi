@@ -1,5 +1,4 @@
 // Created by Github user: DarraghB1992
-
 $(document).ready(function() {
 
 	//Enter your api key here
