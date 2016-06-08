@@ -1,9 +1,9 @@
-// Created by Github user: DarraghB1992 :D 
+// Created by Github user: DarraghB1992
 
 $(document).ready(function() {
 
 	//Enter your api key here
-	var myKey = "";
+	var myKey = "c05a4a43-b73f-44d9-9292-4a0e958ee49c";
 
 	var championList = 'https://global.api.pvp.net/api/lol/static-data/euw/v1.2/champion?champData=all&api_key='+ myKey;
 	var riotStaticData = "https://global.api.pvp.net/api/lol/static-data/euw/v1.2/champion?api_key="+ myKey;
