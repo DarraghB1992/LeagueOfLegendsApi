@@ -2,6 +2,7 @@ body{
 	background-image: url(shurima.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: cover;
 }
 a.thumbnail{
 	background-color: transparent;
