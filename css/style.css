@@ -1,0 +1,22 @@
+body{
+	background-image: url(shurima.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+a.thumbnail{
+	background-color: transparent;
+	border: none;
+}
+h1,h2,h3,h4 {
+    
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.api input{
+	margin-right: 50px;
+}
+input{
+	margin-bottom: 50px;
+}
+.champInput{
+	display: none;
+}

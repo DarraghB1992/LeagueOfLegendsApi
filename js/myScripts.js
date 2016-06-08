@@ -1,8 +1,13 @@
 // Created by Github user: DarraghB1992
-$(document).ready(function() {
+$('button').on('click',function(){
 
 	//Enter your api key here
-	var myKey = "c05a4a43-b73f-44d9-9292-4a0e958ee49c";
+	event.preventDefault();
+	var myKey = $('#key').val();
+	$('.api').remove();
+	$('.champInput').show();
+
+		
 
 	var championList = 'https://global.api.pvp.net/api/lol/static-data/euw/v1.2/champion?champData=all&api_key='+ myKey;
 	var riotStaticData = "https://global.api.pvp.net/api/lol/static-data/euw/v1.2/champion?api_key="+ myKey;
@@ -21,6 +26,7 @@ $(document).ready(function() {
 	var champPicUrl = "http://ddragon.leagueoflegends.com/cdn/6.11.1/img/champion/" + champImage;
 
 	var lastestPicture ='';
+	var notApiLink = 'http://ddragon.leagueoflegends.com/cdn/'+latestVersion+'/data/en_US/champion.json';
 
 
 
@@ -37,6 +43,8 @@ $(document).ready(function() {
 	$('#search').keyup(function(){
 		var searchField = $('#search').val();
 		var myExp = new RegExp(searchField, 'i');
+
+		event.preventDefault();
 
 	$.ajax({
 		url: testLink, 
